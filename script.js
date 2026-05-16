@@ -8,3 +8,16 @@ document.getElementById("reachout").addEventListener("submit", function (e) {
     e.preventDefault();
   }
 });
+
+//HERO ANIMATION
+document.addEventListener("DOMContentLoaded", function () {
+  var typed = new Typed("#typed", {
+    strings: ["Your plug for perfect websites👌"],
+    typeSpeed: 70,
+    backSpeed: 40,
+    backDelay: 1500,
+    loop: true,
+    showCursor: true,
+    cursorChar: "|",
+  });
+});

@@ -6,6 +6,7 @@
     <title>Ngwinui Linda</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   </head>
   <body>
     <!-- NAVBAR -->
@@ -24,37 +25,38 @@
 
     <!-- HERO -->
     <section id="home" class="hero">
-      <h2>LINDA'S SITES</h2>
-      <p>Your plug for perfect websites</p>
-      <a href="#contact" class="btn">Contact Me</a>
+      <div id="animation">
+        <h2 data-aos="fade-up" data-aos-delay="100">LINDA'S SITES</h2>
+        <p data-aos="fade-up" data-aos-delay="300"><span id="typed"></span></p>
+        <a href="#contact" class="btn" data-aos="fade-up" data-aos-delay="500"
+          >Contact Me</a
+        >
+      </div>
     </section>
 
     <!-- ABOUT -->
-    <section id="about" class="about"
-    data-aos="slide-up"
-      data-config='{"autoplay": true, "speed": 100000}'>
+    <section id="about" class="about" data-aos="fade-up" data-aos-delay="200">
       <h2>About Me</h2>
-
       <br />
-     <!-- <div class="about-text">-->
-        Hi👋, I am <strong> Fongoh Linda</strong>, a final year Biomedical
-        Engineering Student at the university of Bamenda. As a side tech skill,
-        I am studying full stack web-development with
-        <a href="https://www.code-blossom.com" target="_blank">Code Blossom </a
-        >and I plan on using the skills learnt to make the world of medicine
-        better. I am located at 3 Corners Bambili and you can trust me to help
-        you create beautiful and user-friendly websites for you companies and
-        businesses.
-     <!-- </div>-->
+      <!-- <div class="about-text">-->
+      Hi👋, I am <strong> Fongoh Linda</strong>, a final year Biomedical
+      Engineering Student at the university of Bamenda. As a side tech skill, I
+      am studying full stack web-development with
+      <a href="https://www.code-blossom.com" target="_blank">Code Blossom </a
+      >and I plan on using the skills learnt to make the world of medicine
+      better. I am located at 3 Corners Bambili and you can trust me to help you
+      create beautiful and user-friendly websites for you companies and
+      businesses.
+      <!-- </div>-->
     </section>
 
     <!-- SKILLS -->
     <section id="skills" class="skills">
-      <h2>MY SKILLS</h2>
+      <div class="skills-header" data-aos="fade-up" data-aos-delay="400">
+        <h2>MY SKILLS</h2>
+      </div>
       <div class="skills-container">
-        <div class="skill-card"
-         data-aos="slide-up"
-      data-config='{"autoplay": true, "speed": 100000}'>
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="600">
           <span class="skill-icon"></span>
           <h3>Web Development</h3>
           <p>
@@ -62,9 +64,7 @@
             websites that deliver exceptional user experiences.
           </p>
         </div>
-        <div class="skill-card"
-        data-aos="slide-up"
-      data-config='{"autoplay": true, "speed": 100000}'>
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="800">
           <span class="skill-icon"></span>
           <h3>UI/UX Design</h3>
           <p>
@@ -72,9 +72,7 @@
             interfaces that prioritize user experience and accessibility.
           </p>
         </div>
-        <div class="skill-card"
-        data-aos="slide-up"
-      data-config='{"autoplay": true, "speed": 500000}'>
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="1000">
           <span class="skill-icon"></span>
           <h3>Biomedical Engineering</h3>
           <p>
@@ -86,9 +84,12 @@
     </section>
 
     <!-- CONTACT -->
-    <section id="contact" class="contact"
-    data-aos="slide-up"
-      data-config='{"autoplay": true, "speed": 100000}'>
+    <section
+      id="contact"
+      class="contact"
+      data-aos="fade-up"
+      data-aos-delay="1400"
+    >
       <h2>CONTACT ME</h2>
       <div class="contact-content">
         <div class="left-side">
@@ -101,8 +102,9 @@
           <p>
             <span class="contact-icon">✉️</span>
             <strong>Email:</strong>
-            <a href="mailto:ngwinuifongohlinda4@gmail.com"
-             target="_blank"
+            <a
+              href="mailto:ngwinuifongohlinda4@gmail.com"
+              target="_blank"
               rel="noopener"
               >ngwinuifongohlinda4@gmail.com</a
             >
@@ -110,7 +112,7 @@
           <p>
             <span class="contact-icon">☎️</span>
             <strong>Phone:</strong>
-            <a href="tel:+237 651 339 095">+237 651 339 095</a>
+            <a href="tel:237651339095">+237 651 339 095</a>
           </p>
           <p>
             <span class="contact-icon">📍</span>
@@ -120,7 +122,7 @@
             <span class="contact-icon">💼</span>
             <strong>LinkedIn:</strong>
             <a
-              href="https://www.linkedin.com/in/ngwinui-linda"
+              href="https://www.linkedin.com/in/Ngwinui-Fongoh-Linda"
               target="_blank"
               rel="noopener"
               >linkedin.com/in/ngwinui-linda</a
@@ -150,7 +152,7 @@
               type="email"
               id="email"
               name="email"
-              placeholder="your.email@example.com"
+              placeholder="yourname.email@domain.com"
               required
             />
 
@@ -175,7 +177,7 @@
         <p>Ngwinui Linda.</p>
       </div>
     </footer>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>

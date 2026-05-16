@@ -316,6 +316,7 @@ body {
 
 }
 
+/*HERO SECTION*/
 .hero {
 
   height: 90vh;                 
@@ -387,7 +388,7 @@ body {
   display: inline-block;        
 
 }
-/* BUTTON STYLES */
+/* BUTTON STYLES\[, */
 
 .btn:hover {
 
@@ -423,13 +424,15 @@ section h2 {
 
 }
 
+/*ABOUT*/
+
 .about {
 
   padding: 80px 20px;           
 
   text-align: center;           
 
-  max-width: 800px;             
+  max-width: 100%;             
 
   margin: 0 auto;               
 
